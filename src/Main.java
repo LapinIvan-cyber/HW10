@@ -10,10 +10,10 @@ public class Main {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
-            for (int o = 0; o < 10; o = o + 2) {
+            for (int o = 0; o < 10; o ++) {
                 System.out.println(o);
             }
-            for (int o = 10; o > 1; o = o - 2) {
+            for (int o = 10; o > 0; o --) {
                 System.out.println(o);
             }
             for (int o = 0; o < 17; o = o + 2) {
