@@ -19,11 +19,11 @@ public class Main {
             for (int o = 0; o < 17; o = o + 2) {
                 System.out.println(o);
             }
-            for (int o = 10; o > -10; o = o - 2) {
+            for (int o = 10; o > -10; o --) {
                 System.out.println(o);
             }
             for (int o = 1904; o < 2096; o = o + 4) {
-                System.out.println("Високосный год" + o);
+                System.out.println("Високосный год " + o);
             }
             for (int o = 7; o < 105; o = o + 7) {
                 System.out.println(o);
