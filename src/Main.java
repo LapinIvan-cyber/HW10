@@ -10,47 +10,50 @@ public class Main {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
-            for (int o = 0; o < 10; o = o + 2) {
+            for (int o = 0; o < 10; o++) {
                 System.out.println(o);
             }
-            for (int o = 10; o > 1; o = o - 2) {
+            for (int o = 10; o > 0; o--) {
                 System.out.println(o);
             }
             for (int o = 0; o < 17; o = o + 2) {
                 System.out.println(o);
             }
-            for (int o = 10; o > -10; o = o - 2) {
+            for (int o = 10; o > -10; o--) {
                 System.out.println(o);
             }
             for (int o = 1904; o < 2096; o = o + 4) {
-                System.out.println("Високосный год" + o);
+                System.out.println("Високосный год " + o);
             }
-            for (int o = 7; o < 105; o = o + 7) {
+            for (int o = 7; o <= 98; o = o + 7) {
                 System.out.println(o);
             }
-            for (int o = 1; o < 1024; o = o * 2) {
+            for (int o = 1; o <= 512; o = o * 2) {
                 System.out.println(o);
             }
             int salary = 29000;
             int total = 0;
-            for (int o = 0; o < 12; o++) {
+            for (int o = 1; o < 12; o++) {
                 total = total + salary;
-                System.out.println(total);
+                System.out.println("Месяц " + o + " сумма накоплений ровна  " + total + " рублей");
             }
-            int salary1 = 29000;
-            int total1 = 0;
-            for (int o = 0; o < 12; o++) {
-                total1 = total1 + total1/ 100;
-                total1 = total1 + salary1;
-                System.out.println("Месяц "  + o +  " Итого " +  total1);
+            int cash = 29000;
+            double total1 = 0;
+            double annualInterestRate = 0.12;
+            double monthlyInterestRate = annualInterestRate / 12;
+            for (int o=1; o <=12; o++){
+                total1 += cash;
+                total1+= total1 * monthlyInterestRate;
+                System.out.println("Месяц " + o + " Итого " + Math.round(total1) + "рублей");
             }
-            System.out.println(total1);
 
-            for (int o = 1; o <= 10; o ++){
+            for (int o = 1; o <= 10; o++) {
                 int result = 2 * o;
                 System.out.println("2 * " + o + " = " + result);
             }
         }
     }
 }
+
+
 
